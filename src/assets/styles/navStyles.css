@@ -1,0 +1,66 @@
+.brandName {
+    color: yellow;
+    text-decoration: none;
+    font-family: "fasthand";
+    transition: all .2s;
+    font-weight: lighter;
+    font-variant: small-caps;
+
+}
+
+.brandName:hover {
+    color: yellow;
+}
+
+Nav Link {
+    width: 5rem;
+}
+
+.nav-item {
+    color: yellow;
+    text-decoration: none;
+    font-family: "fasthand";
+    padding: 0 1rem 0 1rem;
+    transform: rotate(-25deg);
+    transition: all .2s;
+    filter: blur(.5px);
+}
+
+.nav-item:hover {
+    transform: rotate(0deg) scale(1.5);
+    color: yellow;
+    filter: blur(0px);
+    animation: colorGlitch 1s 0s infinite alternate-reverse;
+}
+
+.nav-item:active,
+.nav-item:focus {
+    transform: rotate(0deg) scale(1.5);
+    color: yellow;
+    filter: blur(0px);
+    animation: colorGlitch 1s 1s infinite alternate-reverse;
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        transform: rotate(0deg);
+    }
+
+    .nav-item:hover {
+        transform: scale(1.1);
+        filter: blur(0px);
+    }
+}
+
+
+@keyframes colorGlitch {
+    0%{
+        color:  yellow;
+    }
+    50%{
+        color: #00fef9;
+    }
+    100%{
+        color: yellow;
+    }
+}

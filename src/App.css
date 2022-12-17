@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+@font-face {
+  font-family: "Cyberpunk";
+  /*Can be any text*/
+  src: local("Cyberpunk"),
+    url("./fonts/Cyberpunk.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lineStyle";
+  /*Can be any text*/
+  src: local("Entanglement"),
+    url("./fonts/Entanglement-rgpRB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "fasthand";
+  /*Can be any text*/
+  src: local("Entanglement"),
+    url("./fonts/FastHand-lgBMV.ttf") format("truetype");
+}
