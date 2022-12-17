@@ -11,6 +11,8 @@ export default function HomeComponent() {
             for (var j = 0; j < text.length; j++) {
                 if (text[j].match(' '))
                     newText += "<span class='letter'>&nbsp;</span>";
+                else if (text[j].match('~'))
+                    newText += "<br/>";
                 else
                     newText += "<span class='letter'>" + text[j] + "</span>";
             }
@@ -24,13 +26,13 @@ export default function HomeComponent() {
                 translateZ: 0,
                 easing: "easeOutExpo",
                 duration: 950,
-                delay: (el, i) => 330 * i
+                delay: (el, i) => 100 * i
             }).add({
                 targets: '.ml2',
                 opacity: 0,
                 duration: 1000,
                 easing: "easeOutExpo",
-                delay: 1000
+                delay: 10000
             });
     }
     window.onload = function () {
@@ -43,10 +45,14 @@ export default function HomeComponent() {
     });
     return (
         <div className="home" id="home">
-            <h1 className="ml2">
-                Hello world! I'm Robin Jose Raju.
-            </h1>
-            
+            <div className='centerText'>
+                <h1 className="ml2">
+                    Hello world!
+                </h1>
+                <h1 className="ml2 ">
+                    I'm Robin Jose Raju.
+                </h1>
+            </div>
         </div>
     );
 }

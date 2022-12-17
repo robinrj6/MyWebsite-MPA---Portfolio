@@ -3,16 +3,19 @@
     height: 100vh;
     color: yellow;
     font-family: 'fasthand';
-    display: flex;
-    place-content: center;
-    align-items: center;
     overflow: hidden;
+}
+
+.centerText {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 
 .home h1 {
     font-weight: bolder;
     font-size: 5em;
-    /* text-shadow: 5px 5px 1rem orange; */
     background-image: url("https://media.giphy.com/media/3J5mmUZRWNEr19jL1h/giphy-downsized-large.gif");
     background-size: cover;
     -webkit-background-clip: text;
@@ -20,10 +23,6 @@
     background-clip: text;
 }
 
-
-.ml2 div {
-    /* display: inline-block; */
-}
 
 .ml2 {
     font-weight: 900;
@@ -41,17 +40,19 @@
         font-size: 2.5em;
         letter-spacing: .1em;
         text-shadow: 0px 0px 0rem yellow;
-        font-weight: lighter;
-        background-image: url("https://media.giphy.com/media/3J5mmUZRWNEr19jL1h/giphy-downsized-large.gif");
-        background-size: cover;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
     }
 
     .home h1 span {
-        font-size: .4em;
+        font-size: .8em;
         word-spacing: .1rem;
         font-weight: lighter;
+        line-height: 1rem;
+    }
+
+    .centerText {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        transform: translate(-25%, -50%);
     }
 }
