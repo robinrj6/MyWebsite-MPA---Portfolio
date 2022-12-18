@@ -8,7 +8,7 @@ import '../assets/styles/navStyles.css';
 export default function NavbarComponent() {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+            <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top">
                 <Container>
                     <Navbar.Brand>
                         <Link to="/" className="brandName">
@@ -18,11 +18,11 @@ export default function NavbarComponent() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Link to="/home" className="nav-item d-md-block">Home</Link>
-                            <Link to="/about" className="nav-item d-md-block">About</Link>
-                            <Link to="/skills" className="nav-item d-md-block">Skills</Link>
-                            <Link to="/projects" className="nav-item d-md-block">Projects</Link>
-                            <Link to="/contact" className="nav-item d-md-block">Contact</Link>
+                            <a href="#home" className="nav-item d-md-block">Home</a>
+                            <a href="#about" className="nav-item d-md-block">About</a>
+                            <a href="#skills" className="nav-item d-md-block">Skills</a>
+                            <a href="#projects" className="nav-item d-md-block">Projects</a>
+                            <a href="#contact" className="nav-item d-md-block">Contact</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
