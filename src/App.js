@@ -1,19 +1,24 @@
 import './App.css';
-// import { Routes, Route } from 'react-router-dom';
-import NavbarComponent from './components/NavbarComponent';
 import './fonts/Cyberpunk.ttf';
 import './fonts/Entanglement-rgpRB.ttf';
 import './fonts/FastHand-lgBMV.ttf';
+import 'aos/dist/aos.css';
+import { Route, Routes } from 'react-router-dom';
+import AboutComponent from './components/AboutComponent';
+import NavbarComponent from './components/NavbarComponent';
 import HomeComponent from './components/HomeComponent';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-// ..
 
 function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      <HomeComponent />
+      <Routes>
+        <Route path='/' element={<HomeComponent />} />
+        <Route path='/home' element={<HomeComponent />} />
+        <Route path='/about' element={<AboutComponent />} />
+        <Route path='/' element={<HomeComponent />} />
+        <Route path='/' element={<HomeComponent />} />
+      </Routes>
     </div>
   );
 }

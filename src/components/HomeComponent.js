@@ -1,9 +1,10 @@
 import '../assets/styles/homeStyles.css';
 import anime from "animejs";
 import { useEffect } from 'react';
-import AOS from 'aos';
+// import AOS from 'aos';
+import data from '../assets/data/data.json';
 
-AOS.init();
+// AOS.init();
 export default function HomeComponent() {
     function MovingLetters() {
         var elements = document.getElementsByClassName("ml2");
@@ -51,55 +52,10 @@ export default function HomeComponent() {
                         Hello world!
                     </h1>
                     <h1 className="ml2 ">
-                        I'm Robin Jose Raju.
+                        {data.name}
                     </h1>
                 </div>
             </div>
-            <div className="about" id="about"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
-
-
-            </div>
-            <div className="skills" id="skills"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
-
-            </div>
-            <div className="projects" id="projects"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
-
-            </div>
-            <div className="contact" id="contact"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="50"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
-
-            </div>
-        </div>
+        </div >
     );
 }

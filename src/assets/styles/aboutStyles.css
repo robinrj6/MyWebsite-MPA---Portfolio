@@ -1,0 +1,64 @@
+.about {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 73), black);
+    height: 100vh;
+    color: #9FEE00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .text_about {
+    opacity: 1;
+    margin: 0rem 10rem;
+    text-align: justify;
+    font-size: 2em;
+    animation: fadeinText 1s;
+    line-height: 2.5rem;
+}
+
+@keyframes fadeinText {
+    0% {
+        opacity: 0;
+        font-size: 1.5rem;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:992px) {
+    .about {
+        height: 95vh;
+    }
+
+    .about .text_about {
+        opacity: 1;
+        margin: 0rem 2rem;
+        text-align: justify;
+        font-size: 1.2em;
+    }
+    @keyframes fadeinText {
+        0% {
+            opacity: 0;
+            font-size: .5rem;
+        }
+    
+        50% {
+            opacity: .5;
+        }
+    
+        100% {
+            opacity: 1;
+            font-size: 1.2rem;
+        }
+    }
+}
