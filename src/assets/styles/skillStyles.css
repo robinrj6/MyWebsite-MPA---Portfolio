@@ -1,0 +1,65 @@
+.skills {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 73), black);
+    height: 100vh;
+    color: yellow;
+    font-family: 'Alegreya', serif;
+    overflow: hidden;
+}
+
+.title {
+    padding-top: 5rem;
+    display: flex;
+    font-family: 'fasthand';
+    justify-content: center;
+}
+
+.languages {
+    margin: 5rem 5rem;
+}
+
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    /* font-size: 3.7em; */
+}
+
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+div .progress-bar {
+    font-size: 1.5rem;
+}
+
+@keyframes statusCall {
+    0% {
+        width: 0%;
+    }
+
+    100% {}
+}
+
+@media (max-width:992px) {
+    .skills {
+        height: 95vh;
+    }
+
+    .languages {
+        margin: 2rem 2rem;
+    }
+
+    div .progress-bar {
+        font-size: .5rem;
+    }
+}

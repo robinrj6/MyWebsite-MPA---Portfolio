@@ -1,4 +1,37 @@
 {
-    "name":"I'm Robin Jose Raju.",
-    "about":"I'm a Computer Science and Engineering graduate from Amal Jyothi College of Engineering, Kerala, India. I'm currently working as a Software Engineer at Capgemini Technologies Pvt., Mumbai. I always try to learn new technologies to keep up with the trends in the field and lately I have been working in some projects with React. I have done various projects in various fields like IoT, machine learning, web development..."
+    "name": "I'm Robin Jose Raju.",
+    "about": "I'm a Computer Science and Engineering graduate from Amal Jyothi College of Engineering, Kerala, India. I'm currently working as a Software Engineer at Capgemini Technologies Pvt., Mumbai. I always try to learn new technologies to keep up with the trends in the field and lately I have been working in some projects with React. I have done various projects in various fields like IoT, machine learning, web development...",
+    "programming": [
+        "Java",
+        "C/C++",
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS"
+    ],
+    "programmingValue": {
+        "Java": "30",
+        "C/C++": "10",
+        "Python": "25",
+        "JavaScript": "30",
+        "HTML": "2.5",
+        "CSS": "2.5"
+    },
+    "os": [
+        "Windows",
+        "Linux"
+    ],
+    "db": [
+        "MySQL",
+        "SQLite",
+        "PostgreSQL",
+        "OracleDB"
+    ],
+    "frameworks": [
+        "React",
+        "Node.js",
+        "Bootstrap",
+        "SpringBoot"
+    ],
+    "certifications": []
 }

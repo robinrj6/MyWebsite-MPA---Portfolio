@@ -1,5 +1,6 @@
 import '../assets/styles/aboutStyles.css'
 import data from '../assets/data/data.json';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,10 +16,11 @@ export default function AboutComponent() {
                 data-aos-mirror="true"
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center" */}
-                <h1 class=" text_about">
+                <h1 className=" text_about">
                     <p> {data.about} </p>
                 </h1>
-
+                <Link to="/home" className="d-md-block left"><i className="fa fa-chevron-circle-left"></i></Link>
+                <Link to="/skills" className="d-md-block right"><i className="fa fa-chevron-circle-right"></i></Link>
             </div>
         </div>
     );

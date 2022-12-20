@@ -3,6 +3,7 @@ import anime from "animejs";
 import { useEffect } from 'react';
 // import AOS from 'aos';
 import data from '../assets/data/data.json';
+import { Link } from 'react-router-dom';
 
 // AOS.init();
 export default function HomeComponent() {
@@ -55,6 +56,7 @@ export default function HomeComponent() {
                         {data.name}
                     </h1>
                 </div>
+                <Link to="/about" className="d-md-block right"><i className="fa fa-chevron-circle-right"></i></Link>
             </div>
         </div >
     );
