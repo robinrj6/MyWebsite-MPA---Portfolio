@@ -1,0 +1,37 @@
+.projects {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 73), black);
+    height: 100vh;
+    color: yellow;
+    font-family: 'Alegreya', serif;
+    overflow: hidden;
+
+}
+
+.centerAlign {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+.link {
+    color: yellow;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card .cardImg {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.card .cardImg:hover {
+    transform: scale(1.2);
+}

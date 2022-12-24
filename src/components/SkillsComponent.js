@@ -56,7 +56,8 @@ export default function SkillsComponent() {
                 <div className="languages">
                     <h1 className="ml7">
                         <span className="text-wrapper">
-                            <span className="letters">Languages</span>
+                            <span 
+                            className="letters">Languages</span>
                         </span>
                     </h1>
                     <ProgressBar className="statusbar" style={{ height: '30px', fontFamily: "fasthand" }}>
